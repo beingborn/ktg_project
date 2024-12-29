@@ -10,10 +10,93 @@
   font-family: "Pretendard-Regular";
 }
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1rem;
+  color: #222;
+}
+
+ul, li, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .ally-hidden {
   overflow: hidden;
   position: absolute;
   width: 1px;
   height: 1px;
   clip: rect(1px, 1px, 1px, 1px);
+}
+
+.header {
+  width: 160rem;
+  margin-inline: auto;
+}
+
+.logo img {
+  width: 15rem;
+}
+
+.familysite {
+  display: flex;
+  gap: 2rem;
+}
+.familysite a {
+  font-size: 5rem;
+  font-weight: 700;
+}
+.familysite li {
+  transition: 0.3s;
+}
+.familysite li:nth-child(1):hover {
+  color: orange;
+}
+.familysite li:nth-child(2):hover {
+  color: tomato;
+}
+.familysite li:nth-child(3):hover {
+  color: violet;
+}
+.familysite li:nth-child(4):hover {
+  color: skyblue;
+}
+.familysite li:nth-child(5):hover {
+  color: silver;
+}
+
+.btn-archive {
+  font-size: 1.4rem;
+  font-weight: 500;
+  display: inline-flex;
+  gap: 1rem;
+  align-items: center;
+}
+.btn-archive::before {
+  content: "";
+  width: 2rem;
+  aspect-ratio: 1;
+  background: url("/images/icon_archive.svg") no-repeat center;
+  background-size: contain;
+}
+
+.btn-calendar {
+  font-size: 1.4rem;
+  font-weight: 500;
+  display: inline-flex;
+  gap: 1rem;
+  align-items: center;
+}
+.btn-calendar::before {
+  content: "";
+  width: 2rem;
+  aspect-ratio: 1;
+  background: url(/images/icon_callendar.svg) no-repeat center/contain;
 }
